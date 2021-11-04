@@ -38,9 +38,9 @@
         Return Nothing 'Exam does not exists in the Lists
     End Function
     Public Function AddPasExam(Name As String, CFU As String, Vote As String, DateExam As Date) 'Vote = 0 -> Exam no vote
-        Dim exam_exists = getExamByName(Name)
-        If exam_exists Then
-            MsgBox("Error: This exam has already been entered. Code: " & exam_exists, , Form1.Text)
+        Dim exam = GetExamByName(Name)
+        If exam IsNot Nothing Then
+            MsgBox("Error: This exam has already been entered. Code: -2", , Form1.Text)
             Return False
         End If
         If Vote <> 0 Then
@@ -51,9 +51,9 @@
         Return True
     End Function
     Public Function AddRemExam(Name As String, CFU As String)
-        Dim exam_exists = GetExamByName(Name)
-        If exam_exists Then
-            MsgBox("Error: This exam has already been entered. Code: " & exam_exists, , Form1.Text)
+        Dim exam = GetExamByName(Name)
+        If exam IsNot Nothing Then
+            MsgBox("Error: This exam has already been entered. Code: -1", , Form1.Text)
             Return False
         End If
         RemainingExams.Add(New Exam(Name, CFU))

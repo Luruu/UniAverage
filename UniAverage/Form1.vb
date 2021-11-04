@@ -8,12 +8,16 @@
         LExamRem.Text = student.GetNRemainingExams()
 
         If SumCFU(student.PassedExams) = 0 Then 'cannot calculate averages with 0 exams
+            UpdateExamLists()
+            ResetChart(ChartVote)
+            SetChart(ChartVote, student.PassedExams)
             Exit Sub
         End If
         Lvotearit.Text = Arithmetic(student.PassedExams)
         LvotePon.Text = Weighted(student.PassedExams)
         Lvotepart.Text = GradStartVote(student.PassedExams)
         LProgress.Text = GetProgress(student.PassedExams, student.PassedExamsNoVote, student.MAX_CFU) & "%"
+
         If SumCFU(student.RemainingExams) > 0 Then
             LnoEstimates.Visible = False
             Lminpond.Text = EstimatedWeighted(student.PassedExams, student.RemainingExams, Exam.MINVOTE)

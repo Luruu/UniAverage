@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="UniAverage.exe" version="1.0.0.1" publicKeyToken="59a532bec846ca7f" language="en" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="graduation-cap.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="UniAverage" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="UniAverage.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opzioni manifesto Controllo dell'account utente
+          Se si vuole modificare il livello di Controllo dell'account utente di Windows, sostituire il
+          nodo requestedExecutionLevel con uno dei seguenti.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Se si vuole usare Virtualizzazione file system e registro di sistema per la 
+         compatibilità con le versioni precedenti, eliminare il nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="701992">
+      <assemblyIdentity name="Newtonsoft.Json" version="13.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tiSUnfiw46YVP9+3MKfG9JkLZZLuDZIuF4hDPSdmEPM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UniAverage.exe" size="73640">
+      <assemblyIdentity name="UniAverage" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Jhvz60Meh0mgxhaqT3nDhhG2kyuQbqf94Sc9C/JJEG0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="graduation-cap.ico" size="7870">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>z4O/gUs+nU5/yjtEPQNEtYsw3vbmwUT+pHlgFH7U8EA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="UniAverage.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rO4mjoMPTzC1RdE+BMvf0lfywGmtOsKfE96n+SRa584=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LUCAPC\Luca" issuerKeyHash="c5ee37f4b95d824d3110e8c6287ab481c0bf256f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>lsBGcCnKA921kqJCSF2e/HBOz6SWqoVHV85YeHp2CHs=</DigestValue></Reference></SignedInfo><SignatureValue>SBXsMnmFUWekfAfQgyKq0yq6WOHfF3b+Bq+T4QkX0l863um20z0oJjlzkNfFKWw6d1Jew0MmGdYhThOPEcQl237NdUaqQ4cJOHxLxeWFRJpK1jRU05uNFF5Nves1HSPJFWy+xFM1pBVgQ8D37rZ98wmwWIXs5Tg1P1VOdng/crI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yR6T7/P84yj1kEHsQiZYyP4deOApOOURA04a0L4BDpPNQ8gypyBhccSmPHNkK5d5uMypyUodwmIC3W8FeLo5z8aC6tMKw4DQJuhofJJiWIin0gVVfT5RzoPdBW4MoTLbKzN1rv8+QtLESm7G2ZaYKGi73KawCatMZYBnSwKe/LE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7b08767a7858ce574785aa96a4cf4e70fc9e5d4842a292b5dd03ca297046c096" Description="" Url=""><as:assemblyIdentity name="UniAverage.exe" version="1.0.0.1" publicKeyToken="59a532bec846ca7f" language="en" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LUCAPC\Luca</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>eU4QmGuX6fAswTtHoeNakFR9KVGkyDsNkhINJ/R+4eU=</DigestValue></Reference></SignedInfo><SignatureValue>lnpZE9HcY2Fs0ayN9axR0EWtMejkKj0wZmk2nUS3+f7RE2VMh2OSWVIrhW9DbaqIJfmJwMhtNTsmoM/vwqxNEBCtenQb26AcEouYtY6Jb+9b5ycIP7GXVsDY9aSUW7bTar3x3TQRF1egt/Te/OiYQ9Hb12opi60ti/hceRfQFG0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yR6T7/P84yj1kEHsQiZYyP4deOApOOURA04a0L4BDpPNQ8gypyBhccSmPHNkK5d5uMypyUodwmIC3W8FeLo5z8aC6tMKw4DQJuhofJJiWIin0gVVfT5RzoPdBW4MoTLbKzN1rv8+QtLESm7G2ZaYKGi73KawCatMZYBnSwKe/LE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQIrYCIOZkUaVI+8aM/ECIpDANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYATABVAEMAQQBQAEMAXABMAHUAYwBhMB4XDTIxMTEwNDE3MjkwMFoXDTIyMTEwNDIzMjkwMFowITEfMB0GA1UEAx4WAEwAVQBDAEEAUABDAFwATAB1AGMAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAyR6T7/P84yj1kEHsQiZYyP4deOApOOURA04a0L4BDpPNQ8gypyBhccSmPHNkK5d5uMypyUodwmIC3W8FeLo5z8aC6tMKw4DQJuhofJJiWIin0gVVfT5RzoPdBW4MoTLbKzN1rv8+QtLESm7G2ZaYKGi73KawCatMZYBnSwKe/LECAwEAATANBgkqhkiG9w0BAQsFAAOBgQAISUQJAeT7S4BQFwuNxuwMNrBl9ixaa/7ZYOFZ790r37YcpKRX4tGu2KGpN/FhKefaPeGhao7livrteo4NGtvk2DkIfjpTZwkckqZCJ/qIA7UmwOLsJ9FE9mFRd+jM5LkaTFLkEpmLsi/9qI1HKaFRFyOfgHXhfoktLqiH7qph3A==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
