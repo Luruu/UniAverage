@@ -22,8 +22,8 @@ Partial Class Form1
     'Non modificarla mediante l'editor del codice.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.ListaEsamiRimanenti = New System.Windows.Forms.ListBox()
         Me.GAttuale = New System.Windows.Forms.GroupBox()
@@ -40,6 +40,7 @@ Partial Class Form1
         Me.BAdd = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.LnoEstimates = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Lmaspar = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -62,7 +63,6 @@ Partial Class Form1
         Me.BMove = New System.Windows.Forms.Button()
         Me.BEstimate = New System.Windows.Forms.Button()
         Me.ChartVote = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.LnoEstimates = New System.Windows.Forms.Label()
         Me.GAttuale.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -71,7 +71,7 @@ Partial Class Form1
         '
         'ListaEsamiRimanenti
         '
-        Me.ListaEsamiRimanenti.BackColor = System.Drawing.SystemColors.Menu
+        Me.ListaEsamiRimanenti.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ListaEsamiRimanenti.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ListaEsamiRimanenti.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ListaEsamiRimanenti.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -260,6 +260,18 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 30
         Me.GroupBox1.TabStop = False
         '
+        'LnoEstimates
+        '
+        Me.LnoEstimates.AutoSize = True
+        Me.LnoEstimates.Font = New System.Drawing.Font("Yu Gothic", 9.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LnoEstimates.ForeColor = System.Drawing.Color.Red
+        Me.LnoEstimates.Location = New System.Drawing.Point(2, 103)
+        Me.LnoEstimates.Name = "LnoEstimates"
+        Me.LnoEstimates.Size = New System.Drawing.Size(319, 16)
+        Me.LnoEstimates.TabIndex = 12
+        Me.LnoEstimates.Text = "Insert remaining exams to get different future estimates!"
+        Me.LnoEstimates.Visible = False
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -366,7 +378,7 @@ Partial Class Form1
         '
         'ListaEsami
         '
-        Me.ListaEsami.BackColor = System.Drawing.SystemColors.Menu
+        Me.ListaEsami.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ListaEsami.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ListaEsami.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ListaEsami.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -519,12 +531,12 @@ Partial Class Form1
         Me.ChartVote.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid
         Me.ChartVote.BorderSkin.BackColor = System.Drawing.Color.Transparent
         Me.ChartVote.BorderSkin.PageColor = System.Drawing.Color.Transparent
-        ChartArea3.BackColor = System.Drawing.Color.Transparent
-        ChartArea3.IsSameFontSizeForAllAxes = True
-        ChartArea3.Name = "ChartArea1"
-        Me.ChartVote.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.ChartVote.Legends.Add(Legend3)
+        ChartArea1.BackColor = System.Drawing.Color.Transparent
+        ChartArea1.IsSameFontSizeForAllAxes = True
+        ChartArea1.Name = "ChartArea1"
+        Me.ChartVote.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.ChartVote.Legends.Add(Legend1)
         Me.ChartVote.Location = New System.Drawing.Point(265, 284)
         Me.ChartVote.Name = "ChartVote"
         Me.ChartVote.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright
@@ -532,22 +544,11 @@ Partial Class Form1
         Me.ChartVote.TabIndex = 39
         Me.ChartVote.Text = "ChartVote"
         '
-        'LnoEstimates
-        '
-        Me.LnoEstimates.AutoSize = True
-        Me.LnoEstimates.Font = New System.Drawing.Font("Yu Gothic", 9.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LnoEstimates.ForeColor = System.Drawing.Color.Red
-        Me.LnoEstimates.Location = New System.Drawing.Point(2, 103)
-        Me.LnoEstimates.Name = "LnoEstimates"
-        Me.LnoEstimates.Size = New System.Drawing.Size(319, 16)
-        Me.LnoEstimates.TabIndex = 12
-        Me.LnoEstimates.Text = "Insert remaining exams to get different future estimates!"
-        Me.LnoEstimates.Visible = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(1186, 487)
         Me.Controls.Add(Me.BEstimate)
         Me.Controls.Add(Me.BMove)

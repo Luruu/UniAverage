@@ -80,6 +80,7 @@ Partial Class EstimateForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(302, 196)
         Me.Controls.Add(Me.BStart)
         Me.Controls.Add(Me.RadioAdvanced)
